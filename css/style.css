@@ -267,6 +267,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .navbar-brand .logo, .navbar-brand .logo-alt {
     max-height: 50px;
     display: block;
+    border-radius: 50%;
 }
 
 #nav:not(.nav-transparent):not(.fixed-nav) .navbar-brand .logo-alt {
@@ -1422,7 +1423,7 @@ header {
 
 .contact i {
     font-size: 36px;
-    color: #6195FF;
+    color: #000000;
     margin-bottom: 20px;
 }
 
