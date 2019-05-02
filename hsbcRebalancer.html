@@ -110,7 +110,7 @@
 				<main id="main" class="col-md-9">
 					<div class="blog">
 						<div class="blog-img">
-                <img class="img-responsive" src="./img/blog-post.jpg" alt="">
+                <img class="img-responsive" src="./img/hsbcrebalance.png" alt="">
               </div>
 						<div class="blog-content">
 							<ul class="blog-meta">
@@ -118,30 +118,182 @@
 								<li><i class="fa fa-clock-o"></i>1 May</li>
 							</ul>
 							<h3>Project Description</h3>
-							<p> In this project, a group of students and I were in charge of creating an API to rebalance portfolios contained by a mock system created by HSBC. </p>
-						</div>
+							<p> In this project, a group of students and I were in charge of creating an API to rebalance portfolios contained by a mock system created by HSBC.
+              We went through the whole development process, from doing the documentation to finally deploying our project. Rebalancing is important because portfolios
+            are made up of x number of different funds, say 2. With time these funds can gain interest, changing the percentage that each fund initially made up of the total
+          portfolio. When this happens there needs to be a set of transactions performed on that particular portfolio to bring the allocation back to the pre-established allocation.
+        Here is an example to illustrate. Important to note our UI is simply to showcase the backend functionality, hence its relatively simple and easy to use. Login page authentication
+        was designed to work as long as the customer ID exists in the mock system, so it follows a relatively simple validation. <br></p>
 
-						<!-- blog author -->
-						<div class="blog-author">
-							<div class="media">
-								<div class="media-left">
-									<img class="media-object" src="./img/author.jpg" alt="">
-								</div>
-								<div class="media-body">
-									<div class="media-heading">
-										<h3>Elias Aguirre</h3>
-										<div class="author-social">
-											<a href="#"><i class="fa fa-facebook"></i></a>
-											<a href="#"><i class="fa fa-twitter"></i></a>
-											<a href="#"><i class="fa fa-google-plus"></i></a>
-											<a href="#"><i class="fa fa-instagram"></i></a>
-										</div>
-									</div>
-									<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-								</div>
-							</div>
-						</div>
-						<!-- /blog author -->
+                <!-- Work -->
+                <div class="col-md-4 col-xs-6 work">
+                  <img class="img-responsive" src="./img/hsbcUnbalanced.png" alt="">
+                  <div class="overlay"></div>
+                  <div class="work-content">
+                    <div class="work-link">
+                      <a class="lightbox" href="./img/hsbcUnbalanced.png"><i class="fa fa-search"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Work -->
+
+                <p><br><br><br><br><br>
+                 In this illustration you can see how the portfolio allocations change with time. So after 1 year or 2 years the portfolio is out of balance. So our algorithm, through the API, would make
+                 the required transactions to bring the portfolio back to the pre-determined allocation. These allocation can be modified at any time as you can see in the continuing image. Not does it follow
+                 these allocation preference but you can also establish a "margin of error" which we call deviation. This deviation is the percentage that the client is willing to take as error above or below
+                 the original established allocation. Here you can see our UI for selecting the allocation and the deviation.</p>
+
+                 <!-- Work -->
+                 <div class="col-md-4 col-xs-6 work">
+                   <img class="img-responsive" src="./img/portfolioSettings.png" alt="">
+                   <div class="overlay"></div>
+                   <div class="work-content">
+                     <div class="work-link">
+                       <a class="lightbox" href="./img/portfolioSettings.png"><i class="fa fa-search"></i></a>
+                     </div>
+                   </div>
+                 </div>
+                 <!-- /Work -->
+
+                 <p><br><br><br><br><br><br><br><br><br><br><br> We used Spring Boot to create the calls to a mock system provided by HSBC which contained mock data for clients and their portfolios. The goal was to create an API which would rebalance these portfolios.
+                   The rebalancing consisted of having customers perform a set of transactions to have an initial portfolio. A customer could technically contain no portfolio initially. Once
+                   a portfolio was created, a customer would select their prefered allocation. How this works is we would call the endpoints in their mock system, containing the customer id in the header. We understand this does not
+                 follow standard security procedures but for the scope of the project this was acceptable.  @GetMapping("/portfolio/{id}") was the endpoint to get portfolio information for every client. We did test cases on every endpoint, for example:   </p>
+
+                 <!-- Work -->
+                 <div class="col-md-4 col-xs-6 work">
+                   <img class="img-responsive" src="./img/endpointTest.png" alt="">
+                   <div class="overlay"></div>
+                   <div class="work-content">
+                     <div class="work-link">
+                       <a class="lightbox" href="./img/endpointTest.png"><i class="fa fa-search"></i></a>
+                     </div>
+                   </div>
+                 </div>
+                 <!-- /Work -->
+
+                 <p><br><br><br> Here are all the requirements that our API meets. </p>
+
+                 <!-- Work -->
+                 <div class="col-md-4 col-xs-6 work">
+                   <img class="img-responsive" src="./img/endpoints1.png" alt="">
+                   <div class="overlay"></div>
+                   <div class="work-content">
+                     <div class="work-link">
+                       <a class="lightbox" href="./img/endpoints1.png"><i class="fa fa-search"></i></a>
+                     </div>
+                   </div>
+                 </div>
+                 <!-- /Work -->
+                 <!-- Work -->
+                 <div class="col-md-4 col-xs-6 work">
+                   <img class="img-responsive" src="./img/endpoints2.png" alt="">
+                   <div class="overlay"></div>
+                   <div class="work-content">
+                     <div class="work-link">
+                       <a class="lightbox" href="./img/endpoints2.png"><i class="fa fa-search"></i></a>
+                     </div>
+                   </div>
+                 </div>
+                 <!-- /Work -->
+                 <!-- Work -->
+                 <div class="col-md-4 col-xs-6 work">
+                   <img class="img-responsive" src="./img/endpoints3.png" alt="">
+                   <div class="overlay"></div>
+                   <div class="work-content">
+                     <div class="work-link">
+                       <a class="lightbox" href="./img/endpoints3.png"><i class="fa fa-search"></i></a>
+                     </div>
+                   </div>
+                 </div>
+                 <!-- /Work -->
+
+                 <p><br><br><br><br><br><br><br><br><br> Now the best part, the algorithm. We found various methods to perform the rebalancing. We had
+                 3 different strategies for rebalancing. 1. Buy and Sell. This would mean that when a portfolio is unbalanced, we buy some of the fund that is
+               under allocated and sell some of the fund that is over allocated. 2. Just buy to balance. This would imply the client to add money to their portfolio
+             and buy enough of the fund that is under allocated to bring the distribution back withing the threshold. 3. Just sell to balance. This would imply retracting
+           some funds through selling of the fund that is over allocated such that the allocation goes back to normal. We opted to operate only with 1 for the scope of the project.
+         Our algorithm provides recommendations based on this allocation method. The following UI images reflect first, how a client can visualize both its portfolio and if its unbalanced
+         any recommendations provided. Next, in more detail, how the user can see its own portfolio information, and then how
+       our system performs recommendations for a given portfolio.</p>
+
+       <!-- Work -->
+       <div class="col-md-4 col-xs-6 work">
+         <img class="img-responsive" src="./img/portfolioDisplay.png" alt="">
+         <div class="overlay"></div>
+         <div class="work-content">
+           <div class="work-link">
+             <a class="lightbox" href="./img/portfolioDisplay.png"><i class="fa fa-search"></i></a>
+           </div>
+         </div>
+       </div>
+       <!-- /Work -->
+       <!-- Work -->
+       <div class="col-md-4 col-xs-6 work">
+         <img class="img-responsive" src="./img/recommendation.png" alt="">
+         <div class="overlay"></div>
+         <div class="work-content">
+           <div class="work-link">
+             <a class="lightbox" href="./img/recommendation.png"><i class="fa fa-search"></i></a>
+           </div>
+         </div>
+       </div>
+       <!-- /Work -->
+
+       <p><br><br><br><br><br><br><br>As you can see, the recomendation is not for the portfolio displayed in the first picture. These images
+         are just for the purpose of showcasing how the UI looked. Moving on we have our Use-Case Diagram. It showcases the major user flow through our
+       system and the different cases we had to test for. </p>
+
+       <!-- Work -->
+       <div class="col-md-4 col-xs-6 work">
+         <img class="img-responsive" src="./img/usecaseDiagram.png" alt="">
+         <div class="overlay"></div>
+         <div class="work-content">
+           <div class="work-link">
+             <a class="lightbox" href="./img/usecaseDiagram.png"><i class="fa fa-search"></i></a>
+           </div>
+         </div>
+       </div>
+       <!-- /Work -->
+
+       <p><br><br><br><br><br><br><br>The following illustrates our deployment infrastructure for GCP.  </p>
+
+       <!-- Work -->
+       <div class="col-md-4 col-xs-6 work">
+         <img class="img-responsive" src="./img/gcpDeployment.png" alt="">
+         <div class="overlay"></div>
+         <div class="work-content">
+           <div class="work-link">
+             <a class="lightbox" href="./img/gcpDeployment.png"><i class="fa fa-search"></i></a>
+           </div>
+         </div>
+       </div>
+       <!-- /Work -->
+
+       <p><br><br><br><br>Another very sweet part of our project was being able to set up a pipeline. We used Gitlabs CI Pipeline by doing a
+       .gitlab-ci.yml file containing a script to run our tests. We used gradle as our building tool. I was lucky enough to act as Project Manager for this project
+     as I learned a lot about documenting work and also about building and maintaining a project, something I would not have been able to do without the help of my peers, TA, and professor.
+   Also want to thank HSBC and Google for taking the time and providing us with advice to guide us in building the project. Here you can see our pipeline in production.</p>
+
+   <!-- Work -->
+   <div class="col-md-4 col-xs-6 work">
+     <img class="img-responsive" src="./img/pipeline.png" alt="">
+     <div class="overlay"></div>
+     <div class="work-content">
+       <div class="work-link">
+         <a class="lightbox" href="./img/pipeline.png"><i class="fa fa-search"></i></a>
+       </div>
+     </div>
+   </div>
+   <!-- /Work -->
+
+
+
+
+
+
+						   </div>
+
 				<!-- /Main -->
 
 			</div>
@@ -163,23 +315,6 @@
 			<div class="row">
 
 				<div class="col-md-12">
-
-					<!-- footer logo -->
-					<div class="footer-logo">
-						<a href="index.html"><img src="img/logo-alt.png" alt="logo"></a>
-					</div>
-					<!-- /footer logo -->
-
-					<!-- footer follow -->
-					<ul class="footer-follow">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-					</ul>
-					<!-- /footer follow -->
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
