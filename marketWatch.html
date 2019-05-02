@@ -28,6 +28,7 @@
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
 
+
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -66,7 +67,6 @@
 					<li><a href="index.html#home">Home</a></li>
 					<li><a href="index.html#about">About</a></li>
 					<li><a href="index.html#portfolio">Personal Projects</a></li>
-					<li><a href="index.html#service">Services</a></li>
 					<li><a href="index.html#pricing">Prices</a></li>
 					<li><a href="index.html#team">Team</a></li>
 					<li class="has-dropdown"><a>Blog</a>
@@ -85,7 +85,7 @@
 		<!-- header wrapper -->
 		<div class="header-wrapper sm-padding bg-grey">
 			<div class="container">
-				<h2>BestBuy.AR</h2>
+				<h2>Market Watch</h2>
 				<ul class="breadcrumb">
 					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
 					<li class="breadcrumb-item"><a href="index.html#portfolio">Projects</a></li>
@@ -111,39 +111,131 @@
 				<main id="main" class="col-md-9">
 					<div class="blog">
 						<div class="blog-img">
-                <img class="img-responsive" src="./img/blog-post.jpg" alt="">
+                <img class="img-responsive" src="./img/HomePage.png" alt="">
               </div>
 						<div class="blog-content">
 							<ul class="blog-meta">
-								<li><i class="fa fa-user"></i>John doe</li>
-								<li><i class="fa fa-clock-o"></i>18 Oct</li>
-								<li><i class="fa fa-comments"></i>57</li>
+								<li><i class="fa fa-user"></i>Elias Aguirre</li>
+								<li><i class="fa fa-clock-o"></i>1 May</li>
 							</ul>
-							<h3>Morbi mattis felis at nunc. Duis viverra</h3>
-							<p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+							<h3>Project Details</h3>
+							<p>For this project, we were allowed to chose whatever we wanted to do. We focused on doing a stock trading platform. In our platform
+              companies will list their stocks with a trading index and clients would then create their portfolios buy purchasing stocks form the ones available.
+            We used static data provided by the Capital IQ Database. We created two different profiles in our database, Managers and Clients. Clients have accounts
+          containing information like their names, address, birth date, email and other banking information like bank account number. There are many clients but
+        not every client needs to have a portfolio, this was just part of our design decision. This means they can simply have an account with no portfolio.
+      A portfolio consists of a collection of stocks from those available (one of the indexes) and is held by a client. A manager can have many different client
+    portfolios under its command and is allowed to perform transactions on those portolios. Client only directly controls its account information and has access
+  to its own portfolio.  </p>
+
+              <p> Here you can see how a user can register, login, update its information, buy stocks, sell stocks, and see their portfolio holdings. </p>
+
+              <!-- Work -->
+      				<div class="col-md-4 col-xs-6 work">
+      					<img class="img-responsive" src="./img/User_Registration.png" alt="">
+      					<div class="overlay"></div>
+      					<div class="work-content">
+      						<div class="work-link">
+      							<a class="lightbox" href="./img/User_Registration.png"><i class="fa fa-search"></i></a>
+      						</div>
+      					</div>
+      				</div>
+      				<!-- /Work -->
+              <!-- Work -->
+      				<div class="col-md-4 col-xs-6 work">
+      					<img class="img-responsive" src="./img/User_Login.png" alt="">
+      					<div class="overlay"></div>
+      					<div class="work-content">
+      						<div class="work-link">
+      							<a class="lightbox" href="./img/User_Login.png"><i class="fa fa-search"></i></a>
+      						</div>
+      					</div>
+      				</div>
+      				<!-- /Work -->
+              <!-- Work -->
+              <div class="col-md-4 col-xs-6 work">
+      					<img class="img-responsive" src="./img/Update_User.png" alt="">
+      					<div class="overlay"></div>
+      					<div class="work-content">
+      						<div class="work-link">
+      							<a class="lightbox" href="./img/Update_User.png"><i class="fa fa-search"></i></a>
+      						</div>
+      					</div>
+      				</div>
+      				<!-- /Work -->
+              <!-- Work -->
+              <div class="col-md-4 col-xs-6 work">
+      					<img class="img-responsive" src="./img/Buy_Stock.png" alt="">
+      					<div class="overlay"></div>
+      					<div class="work-content">
+      						<div class="work-link">
+      							<a class="lightbox" href="./img/Buy_Stock.png"><i class="fa fa-search"></i></a>
+      						</div>
+      					</div>
+      				</div>
+      				<!-- /Work -->
+              <!-- Work -->
+              <div class="col-md-4 col-xs-6 work">
+      					<img class="img-responsive" src="./img/Sell_Portfolio.png" alt="">
+      					<div class="overlay"></div>
+      					<div class="work-content">
+      						<div class="work-link">
+      							<a class="lightbox" href="./img/Sell_Portfolio.png"><i class="fa fa-search"></i></a>
+      						</div>
+      					</div>
+      				</div>
+      				<!-- /Work -->
+              <!-- Work  -->
+              <div class="col-md-4 col-xs-6 work">
+      					<img class="img-responsive" src="./img/User_Portfolio_View.png"  alt="">
+      					<div class="overlay"></div>
+      					<div class="work-content">
+      						<div class="work-link">
+      							<a class="lightbox" href="./img/User_Portfolio_View.png" ><i class="fa fa-search"></i></a>
+      						</div>
+      					</div>
+      				</div>
+      				<!-- /Work -->
+
+              <p> Moving on we have the same registration and login for the Manager, which is a different profile in the database</p>
+
+              <div class="col-md-4 col-xs-6 work">
+                <img class="img-responsive" src="./img/Manager_Login.png" alt="">
+                <div class="overlay"></div>
+                <div class="work-content">
+                  <div class="work-link">
+                    <a class="lightbox" href="./img/Manager_Login.png"><i class="fa fa-search"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- /Work -->
+              <!-- Work  -->
+              <div class="col-md-4 col-xs-6 work">
+                <img class="img-responsive" src="./img/Manager_Profile.png"  alt="">
+                <div class="overlay"></div>
+                <div class="work-content">
+                  <div class="work-link">
+                    <a class="lightbox" href="./img/Manager_Profile.png" ><i class="fa fa-search"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- /Work -->
+              <p> Furthermore here you can see our ER Diagram, which represents the relationships between entities we designed for our program.</p>
+
+              <img src="./img/ERDiagram.png"></img>
+
+              <p>Under this following link you will be able to visualize our applications final design which contains our Relational Model translation,
+              functional dependencies, our normalized tables, and also the SQL DDL tables. This is the baseline for the project design.  </p>
+
+              <a href="./pdfFiles/FinalDesign.pdf" target="_blank">
+                <p>Open Project Design<p>
+              </a>
+
+
+
+
 						</div>
 
-						<!-- blog author -->
-						<div class="blog-author">
-							<div class="media">
-								<div class="media-left">
-									<img class="media-object" src="./img/author.jpg" alt="">
-								</div>
-								<div class="media-body">
-									<div class="media-heading">
-										<h3>Elias Aguirre</h3>
-										<div class="author-social">
-											<a href="#"><i class="fa fa-facebook"></i></a>
-											<a href="#"><i class="fa fa-twitter"></i></a>
-											<a href="#"><i class="fa fa-google-plus"></i></a>
-											<a href="#"><i class="fa fa-instagram"></i></a>
-										</div>
-									</div>
-									<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-								</div>
-							</div>
-						</div>
-						<!-- /blog author -->
 				<!-- /Main -->
 
 			</div>
